@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>📚 لیسه خصوصی اصیل شهر</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            background-color: white;
+            color: black;
+            padding: 50px;
+        }
+        img {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+        .info {
+            margin: 15px 0;
+            font-size: 18px;
+        }
+        .qr-container {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- لوگو -->
+    <img src="logo.png" alt="لوگوی مدرسه">
+
+    <h1>📚 لیسه خصوصی اصیل شهر</h1>
+
+    <div class="info">📞 0764262093</div>
+    <div class="info">✉️ asilshahr.school@gmail.com</div>
+    <div class="info">📍 سرک چهل متره تانک تیل قسیم</div>
+
+    <!-- QR code -->
+    <div class="qr-container" id="qrcode"></div>
+
+    <!-- کتابخانه QR Code JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script>
+        new QRCode(document.getElementById("qrcode"), {
+            text: window.location.href, // QR code به همین صفحه اشاره می‌کند
+            width: 200,
+            height: 200
+        });
+    </script>
+
+</body>
+</html>
